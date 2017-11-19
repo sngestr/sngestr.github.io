@@ -45,7 +45,7 @@ nav {
 nav li{
 	list-style: none;
 	display: inline-block;
-	font-size: .95rem;
+	font-size: 0.95rem;
 	letter-spacing: 1.5px;
 	vertical-align: 25px;
 }
@@ -58,7 +58,7 @@ nav li{
 
 #my_title {
 	display: block;
-	font-size: .5rem;
+	font-size: 0.5rem;
 }
 
 /* ======= Profile Section ======= */
