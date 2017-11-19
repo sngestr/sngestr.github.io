@@ -10,21 +10,6 @@ body {
 	box-sizing: border-box;
 }
 
-nav button {
-	color: #333333;
-	outline: none !important;
-	text-decoration: none;
-	border: none !important;
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
-}
-
-button:hover {
-	color: #e0caca;
-	text-decoration: none;
-	transition: 0.3s;
-	cursor: pointer;
-}
 .hide {
 	display: none;
 }
@@ -40,24 +25,38 @@ button:hover {
 	left: 0; 
 	background: #fff; 
 	z-index:9999;
-	background-image: url('https://www.createwebsite.net/wp-content/uploads/2015/09/GD.gif');
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* ========= Navigation ========= */
 nav {
+	background-color: #fff;
 	padding: 25px 0px 0px 0px;
 	line-height: 25px;
 	font-weight: 400;
 }
+nav button {
+	color: #333333;
+	outline: none !important;
+	text-decoration: none;
+	border: none !important;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	transition: 0.3s;
+}
 
+button:hover {
+	color: #e0caca;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: solid 2px #eeeeec !important;
+}
 #name {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
 	font-weight: 700;
 }
 
-nav li{
+nav li {
 	list-style: none;
 	display: inline-block;
 	font-size: 0.95rem;
@@ -66,12 +65,12 @@ nav li{
 
 #home_button {
 	color: #333333;
-	transition: all 0.3s ease-in-out;
+	transition: 0.2s;
 }
 
 #home_button:hover {
 	border-left: solid 10px #eeeeec !important;
-	transition-timing-function: ease-in-out;
+	border-bottom: none !important;
 }
 
 #home_button span {
@@ -105,6 +104,7 @@ nav li{
 /* =========== Footer =========== */
 footer {
 	clear: both;
+	padding-bottom: 40px;
 }
 footer div {
 	margin: 0 auto;
