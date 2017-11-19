@@ -10,11 +10,11 @@ body {
 	box-sizing: border-box;
 }
 
-button {
+nav button {
 	color: #333333;
-	outline: none;
+	outline: none !important;
 	text-decoration: none;
-	border: none;
+	border: none !important;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 }
@@ -66,7 +66,7 @@ nav li{
 }
 
 #home_button:hover {
-	border-left: solid 2px #eeeeec;
+	border-left: solid 2px #eeeeec !important;
 	transition: 0.4s;
 }
 
