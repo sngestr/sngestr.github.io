@@ -2,7 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
-s
+
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -26,6 +26,9 @@ button:hover {
 	cursor: pointer;
 }
 .hide {
+	display: none;
+}
+#wrapper {
 	display: none;
 }
 /* =========== Cover ============ */
@@ -63,11 +66,12 @@ nav li{
 
 #home_button {
 	color: #333333;
+	transition: all 0.3s ease-in-out;
 }
 
 #home_button:hover {
-	border-left: solid 2px #eeeeec !important;
-	transition: 0.4s;
+	border-left: solid 10px #eeeeec !important;
+	transition-timing-function: ease-in-out;
 }
 
 #home_button span {
@@ -88,6 +92,7 @@ nav li{
 /* ======== Main Section ========= */
 #main {
 	margin-top: 2rem;
+	padding-bottom: 30px;
 }
 
 #main header {
