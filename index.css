@@ -27,6 +27,9 @@ a:hover {
 	left: 0; 
 	background: #fff; 
 	z-index:9999;
+	background-image: url('https://www.createwebsite.net/wp-content/uploads/2015/09/GD.gif');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 /* ========= Navigation ========= */
 nav {
@@ -72,7 +75,7 @@ nav li{
 	margin-top: 2rem;
 }
 
-#main header{
+#main div header {
 	font-size: 3rem;
 	float: left;
 	letter-spacing: 1.5px;
