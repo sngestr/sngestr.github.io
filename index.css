@@ -2,7 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
-
+s
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -12,7 +12,7 @@ body {
 
 button {
 	color: #333333;
-	outline: none !important;
+	outline: none;
 	text-decoration: none;
 	border: none;
 	text-transform: uppercase;
@@ -26,7 +26,7 @@ button:hover {
 	cursor: pointer;
 }
 .hide {
-	display: none !important;
+	display: none;
 }
 /* =========== Cover ============ */
 #cover {
