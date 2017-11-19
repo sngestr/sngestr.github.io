@@ -9,17 +9,37 @@ body {
 	font-style: normal;
 }
 
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e0caca;
+	text-decoration: none;
+}
+/* =========== Cover ============ */
+#cover {
+	position: fixed; 
+	height: 100%; 
+	width: 100%; 
+	top:0; 
+	left: 0; 
+	background: #fff; 
+	z-index:9999;
+}
 /* ========= Navigation ========= */
 nav {
-	padding: 15px 0px 10px 0px;
+	padding: 15px 0px 5px 0px;
 	line-height: 25px;
 	text-transform: uppercase;
+	font-weight: 400;
 }
 
 #name {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 nav li{
@@ -30,18 +50,15 @@ nav li{
 	vertical-align: 25px;
 }
 
-nav a {
-	color: #333333;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #f3d9d9;
-	text-decoration: none;
-}
-
 #name a:hover {
 	color: #333333;
+	border-bottom: solid 3px #eeeeec;
+	transition: 0.4s;
+}
+
+#my_title {
+	display: block;
+	font-size: .5rem;
 }
 
 /* ======= Profile Section ======= */
@@ -55,9 +72,18 @@ nav a:hover {
 	margin-top: 2rem;
 }
 
-#main_section_home{
+#main header{
 	font-size: 3rem;
 	float: left;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+}
+
+/* =========== Footer =========== */
+
+footer div {
+	margin: 0 auto;
+}
+footer a {
+	font-weight: 400;
 }
