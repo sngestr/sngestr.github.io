@@ -1,0 +1,63 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* ========= Navigation ========= */
+nav {
+	padding: 15px 0px 10px 0px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+#name {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+nav li{
+	list-style: none;
+	display: inline-block;
+	font-size: .95rem;
+	letter-spacing: 1.5px;
+	vertical-align: 25px;
+}
+
+nav a {
+	color: #333333;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #f3d9d9;
+	text-decoration: none;
+}
+
+#name a:hover {
+	color: #333333;
+}
+
+/* ======= Profile Section ======= */
+#profile_section {
+	background-color: #f3d9d9;
+	height: 400px;
+}
+
+/* ======== Main Section ========= */
+#main {
+	margin-top: 2rem;
+}
+
+#main_section_home{
+	font-size: 3rem;
+	float: left;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
