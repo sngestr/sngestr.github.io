@@ -14,11 +14,6 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<!--====================================
-							COVER
-			========================================-->
-			<div id="cover">
-			</div>
 
 			<!--====================================
 						  NAVIGATION
@@ -41,7 +36,7 @@
 						<button onclick="show('main_section_experience')"> Experience </button>
 					</li>
 					<li class="col-md-2">
-						<button> Resume </button>
+						<button onclick="show('main_section_resume')"> Resume </button>
 					</li>
 					<li class="col-md-2">
 						<button onclick="show('main_section_contact')"> Contact </button>
@@ -54,7 +49,7 @@
 			========================================-->
 
 			<div id="profile_section" class="container-fluid">
-				
+				<div id="test"><img src="https://media.giphy.com/media/FTo2u2JyVYOLC/giphy.gif" /></div>
 			</div>
 
 			<!--====================================
@@ -100,13 +95,30 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
 
+			<!--- - - - -  -  Resume page - - -  -  - - -->
+			<div class="row hide component" id="main_section_resume">
+				<header class="col-md-12">
+					Resume
+					<hr align="left" width="3%" />
+				</header>
+				<div class="col-md-12 text-center">
+					<embed src="./files/esther-song-resume.pdf" id="resume" width=80% height= 1100px />
+					<br /> <br />
+					<a href="./files/esther-song-resume.pdf" download="Esther Song-Resume.pdf" id="download_link">
+						<div class="circle_link">
+							<img src="./assets/download.jpg" />
+						</div>
+					</a>
+				</div>
+			</div>
+
 			<!--- - - - -  -  Contact page - - -  -  - - -->
 			<div class="row hide component" id="main_section_contact">
 				<header class="col-md-12">
 					Contact
 					<hr align="left" width="3%" />
 				</header>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<a href="mailto:song.esther01@gmail.com" target="_top">song.esther01@gmail.com</a>
 			</div>
 
 			<!--====================================

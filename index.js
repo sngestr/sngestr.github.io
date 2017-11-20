@@ -1,7 +1,3 @@
-$(window).on('load', function() {
-    $("#cover").hide();
-});
-
 $(document).ready(function() {
 	$('#wrapper').fadeIn();
 	$('#main').html($('#main_section_home').html());

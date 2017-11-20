@@ -16,16 +16,6 @@ body {
 #wrapper {
 	display: none;
 }
-/* =========== Cover ============ */
-#cover {
-	position: fixed; 
-	height: 100%; 
-	width: 100%; 
-	top:0; 
-	left: 0; 
-	background: #fff; 
-	z-index:9999;
-}
 /* ========= Navigation ========= */
 nav {
 	background-color: #fff;
@@ -42,6 +32,7 @@ nav button {
 	letter-spacing: 1.5px;
 	font-weight: 400;
 	transition: 0.3s;
+	background-color: #fff;
 }
 
 button:hover {
@@ -65,6 +56,7 @@ nav li {
 
 #home_button {
 	color: #333333;
+	background-color: #fff;
 	transition: 0.2s;
 }
 
@@ -84,8 +76,14 @@ nav li {
 
 /* ======= Profile Section ======= */
 #profile_section {
+	position: relative;
 	background-color: #f3d9d9;
 	height: 400px;
+}
+
+#test img {
+	position: absolute;
+	bottom: 0;
 }
 
 /* ======== Main Section ========= */
@@ -101,6 +99,35 @@ nav li {
 	text-transform: uppercase;
 }
 
+/* - - - - - - Resume - - - - - - */
+#main_section_resume div {
+	color: black;
+}
+#download_link {
+	color: #333333;
+	font-weight: 400;
+	font-size: 1rem;
+	text-transform: uppercase;
+	transition: 0.2s;
+	line-height: 100px;
+}
+#download_link:hover {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: solid 2px #eeeeec;
+}
+.circle_link {
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background-color: #e0caca;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+.circle_link img{
+	width: 70px;
+	height: 70px;
+}
 /* =========== Footer =========== */
 footer {
 	clear: both;
