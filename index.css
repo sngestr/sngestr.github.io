@@ -134,6 +134,29 @@ nav li {
 	width: 70px;
 	height: 70px;
 }
+
+#resume {
+	width: 80%;
+	height: 1100px; 
+}
+@media screen and (max-width: 1050px) {
+	#resume {
+		width: 100%;
+		height: 900px; 
+	}
+}
+@media screen and (max-width: 760px) {
+	#resume {
+		width: 100%;
+		height: 600px; 
+	}
+}
+@media screen and (max-width: 400px) {
+	#resume {
+		width: 100%;
+		height: 450px; 
+	}
+}
 /* ======= Portfolio  Section ======= */
 .project_link {
 	transition: 0.3s;
@@ -151,4 +174,8 @@ footer div {
 }
 footer a {
 	font-weight: 400;
+}
+footer img {
+	margin: 5px;
+	width: 30px;
 }
