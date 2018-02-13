@@ -164,6 +164,16 @@ nav li {
 div .project_link:hover {
 	opacity: 0.6;
 }
+.demo_link {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	color: #f0c5c5;
+	letter-spacing: 1px;
+}
+.demo_link:hover {
+	text-decoration: none;
+	color: #e0b4b4;
+}
 /* =========== Footer =========== */
 footer {
 	clear: both;
