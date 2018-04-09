@@ -1,6 +1,8 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 body {
@@ -15,6 +17,20 @@ body {
 }
 #wrapper {
 	display: none;
+}
+.remove-txt-deco {
+	color: gray;
+}
+.remove-txt-deco:hover {
+	color: #c7dad1;
+	outline: none;
+	text-decoration: none;
+}
+.align-right {
+	text-align: right
+}
+.center-align {
+	text-align: center;
 }
 /* ========= Navigation ========= */
 nav {
@@ -137,24 +153,24 @@ nav li {
 
 #resume {
 	width: 80%;
-	height: 1100px; 
+	height: 1100px;
 }
 @media screen and (max-width: 1050px) {
 	#resume {
 		width: 100%;
-		height: 900px; 
+		height: 900px;
 	}
 }
 @media screen and (max-width: 760px) {
 	#resume {
 		width: 100%;
-		height: 600px; 
+		height: 600px;
 	}
 }
 @media screen and (max-width: 400px) {
 	#resume {
 		width: 100%;
-		height: 450px; 
+		height: 450px;
 	}
 }
 /* ======= Portfolio  Section ======= */
@@ -173,6 +189,34 @@ div .project_link:hover {
 .demo_link:hover {
 	text-decoration: none;
 	color: #e0b4b4;
+}
+/* =========== Contact =========== */
+.contact-style {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+.name-card {
+	font-size: 1.6rem;
+	color: black;
+	font-weight: 400;
+}
+.card {
+	width: 500px;
+	height: 300px;
+	border-radius: 10px;
+	border-color: transparent;
+	background-color: #f8f8f8;
+	padding: 20px;
+	box-shadow: 20px 20px 0px #e9e7e7;
+}
+.contact-info {
+	padding: 10px;
+}
+.backdrop {
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #d9e6e0;
 }
 /* =========== Footer =========== */
 footer {
