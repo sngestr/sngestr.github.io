@@ -22,7 +22,6 @@ body {
 	color: gray;
 }
 .remove-txt-deco:hover {
-	color: #c7dad1;
 	outline: none;
 	text-decoration: none;
 }
