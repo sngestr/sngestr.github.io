@@ -239,24 +239,26 @@ html { overflow-y: scroll; }
   font-size: 5rem;
   color:#fff;
 }
-#spin:after {
+#spin:after, #spin:before {
   content:"I'm Esther Song,";
-  -webkit-animation: spin 5s linear infinite;
+  -webkit-animation: webkit-spin 5s linear infinite;
+  -moz-animation: moz-spin 5s linear infinite;
   animation: spin 5s linear infinite;
 }
+
 @keyframes spin {
   0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
   40%, 50%, 60% { content:"art enthusiast,"; }
   70%, 80%, 90%, 100% { content:"Software Developer,"; }
 }
 
-@-moz-keyframes spin{
+@-moz-keyframes moz-spin{
   0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
   40%, 50%, 60% { content:"art enthusiast,"; }
   70%, 80%, 90%, 100% { content:"Software Developer,"; }
 }
 
-@-webkit-keyframes spin{
+@-webkit-keyframes webkit-spin{
   0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
   40%, 50%, 60% { content:"art enthusiast,"; }
   70%, 80%, 90%, 100% { content:"Software Developer,"; }
