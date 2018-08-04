@@ -253,15 +253,15 @@ html { overflow-y: scroll; }
 }
 
 @-moz-keyframes moz-spin{
-  0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
-  40%, 50%, 60% { content:"art enthusiast,"; }
-  70%, 80%, 90%, 100% { content:"Software Developer,"; }
+  0%, 10%, 20%, 30% { -moz-content:"I'm Esther Song,"; }
+  40%, 50%, 60% { -moz-content:"art enthusiast,"; }
+  70%, 80%, 90%, 100% { -moz-content:"Software Developer,"; }
 }
 
 @-webkit-keyframes webkit-spin{
-  0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
-  40%, 50%, 60% { content:"art enthusiast,"; }
-  70%, 80%, 90%, 100% { content:"Software Developer,"; }
+  0%, 10%, 20%, 30% { -webkit-content:"I'm Esther Song,"; }
+  40%, 50%, 60% { -webkit-content:"art enthusiast,"; }
+  70%, 80%, 90%, 100% { -webkit-content:"Software Developer,"; }
 }
 
 @media only screen and (max-width: 600px) {
