@@ -186,10 +186,9 @@ html { overflow-y: scroll; }
   bottom: 0;
   right: 0;
   opacity: 0;
-  /* -webkit-transition: all 0.4s ease-in-out 0s; */
   -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
   -webkit-transition: -webkit-transform all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .content:hover .content-overlay{
@@ -246,6 +245,18 @@ html { overflow-y: scroll; }
   animation: spin 5s linear infinite;
 }
 @keyframes spin {
+  0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
+  40%, 50%, 60% { content:"art enthusiast,"; }
+  70%, 80%, 90%, 100% { content:"Software Developer,"; }
+}
+
+@-moz-keyframes spin{
+  0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
+  40%, 50%, 60% { content:"art enthusiast,"; }
+  70%, 80%, 90%, 100% { content:"Software Developer,"; }
+}
+
+@-webkit-keyframes spin{
   0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
   40%, 50%, 60% { content:"art enthusiast,"; }
   70%, 80%, 90%, 100% { content:"Software Developer,"; }
