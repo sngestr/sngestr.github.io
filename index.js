@@ -1,5 +1,3 @@
-// external js: masonry.pkgd.js, imagesloaded.pkgd.js
-
 // init Masonry
 var grid = document.querySelector('.grid');
 
