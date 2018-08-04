@@ -236,12 +236,11 @@ html { overflow-y: scroll; }
 }
 
 #spin {
-  content:"I'm Esther Song,";
   font-size: 5rem;
   color:#fff;
 }
 #spin:after {
-  content:"";
+  content:"I'm Esther Song,";
   -webkit-animation: spin 5s linear infinite;
   animation: spin 5s linear infinite;
 }
