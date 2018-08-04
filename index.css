@@ -21,6 +21,9 @@ html { overflow-y: scroll; }
   #links a img {
     background-blend-mode: screen multiply;
   }
+  .top-animated-words {
+    z-index: 200;
+  }
 .top-outline {
   position: absolute;
   border: 1px dotted #000;
