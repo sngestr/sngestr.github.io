@@ -239,7 +239,7 @@ html { overflow-y: scroll; }
   font-size: 5rem;
   color:#fff;
 }
-#spin:after, #spin:before {
+#spin:before {
   content:"I'm Esther Song,";
   -webkit-animation: webkit-spin 5s linear infinite;
   -moz-animation: moz-spin 5s linear infinite;
