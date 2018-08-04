@@ -1,11 +1,15 @@
-$(document).ready(function() {
-	$('#wrapper').fadeIn();
-	$('#main').html($('#main_section_home').html());
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry
+var grid = document.querySelector('.grid');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
 });
 
-function show(param_div_id) {
-	$('#main').fadeOut('normal', function() {
-      $('#main').html($('#' + param_div_id).html());
-      $('#main').fadeIn('normal');
-  });
-}
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});

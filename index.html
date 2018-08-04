@@ -1,223 +1,130 @@
-<html lang="en">
-	<head>
-		<title>Esther Song</title>
-		<meta name="viewport" content="width=device-width, intial-scale=1.0">
-		<!--Bootstrap-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
-		<!--JQuery-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<!--Font-->
-		<link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,700" rel="stylesheet" />
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="./index.css" />
-		<!--Javacsript-->
-		<script src="./index.js"></script>
-	</head>
-	<body>
-		<div id="wrapper">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Esther Song</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway:300,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+  </head>
+  <body>
+    <div id="top">
+        <div class="top-outline" id="top-outline-one"></div>
+          <a href="#work"><span class="baskerville-font" id="top-work"> Work</span></a>
+          <div class="top-animated-words">
+            <span class="baskerville-font uppercase" id="spin"></span>
+          </div>
+          <br />
+          <div id="links">
+            <a href="https://github.com/songesu" target="_blank"><img src="assets/github-icon.png" class="icon-size" alt="github" /></a>
+            <a href="https://www.linkedin.com/in/songesther/" target="_blank"><img src="assets/linkedin.png" class="icon-size" alt="linkedin" /></a>
+            <a href="mailto:song.esther01@gmail.com"><img src="assets/mail.png" class="icon-size" alt="mail" /></a>
+        </div>
+        </div>
+    </div>
 
-			<!--====================================
-						  NAVIGATION
-			========================================-->
+    <div id="body">
+      <div id="work" class="body-title-wrapper">
+        <div class="body-bg-lg"></div>
+        <div class="body-bg-sm"></div>
+        <span class="baskerville-font body-title-txt">Work</span>
+      </div>
 
-			<nav class="container">
-				<ul class="row">
-					<li class="col-md-4">
-						<button onclick="show('main_section_home')" id="home_button">
-							<div>
-								<span id="name"> Esther Song </span>
-								<span id="my_title"> Aspiring Software Developer </span>
-							</div>
-						</button>
-					</li>
-					<li class="col-md-2">
-						<button onclick="show('main_section_home')"> Home </button>
-					</li>
-					<li class="col-md-2">
-						<button onclick="show('main_section_portfolio')"> Portfolio </button>
-					</li>
-					<li class="col-md-2">
-						<button onclick="show('main_section_resume')"> Resume </button>
-					</li>
-					<li class="col-md-2">
-						<button onclick="show('main_section_contact')"> Contact </button>
-					</li>
-				</ul>
-			</nav>
+      <div class="grid raleway-font body-works">
+        <div class="grid-sizer"></div>
 
-			<!--====================================
-						COOL NAV SECTION
-			========================================-->
+        <div class="grid-item">
+          <div class="content">
+            <a href="https://github.com/songesu/SimpleCalendar" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/simple-calendar.png">
+              <div class="content-details fadeIn-top">
+                <h3>Simple  Calendar</h3>
+                <p>Create events on a calendar with the ability to update and delete the event.</p>
+                <div class="note android-note">Android Application</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-			<div id="profile_section" class="container-fluid">
-			</div>
+        <div class="grid-item">
+          <div class="content">
+            <a href="http://54.147.235.220:3000/" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/peer-tutor.png">
+              <div class="content-details fadeIn-top">
+                <h3>Peer Tutor</h3>
+                <p>Platform that seeks to help college students find tutors specifically for their class.</p>
+                <div class="note web-note">Web Application</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-			<!--====================================
-						MAIN SECTION
-			========================================-->
-			<div id="main" class="container">
-			</div>
+        <div class="grid-item">
+          <div class="content">
+            <a href="https://play.google.com/store/apps/details?id=com.cloudient.simpletipcalculator" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/simple-cal.png">
+              <div class="content-details fadeIn-top">
+                <h3>Tip Calculator</h3>
+                <p>Calculator that caluclates to the total tip of a bill. Get it on google play.</p>
+                <div class="note android-note">Android Application</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-			<!--- - - - -  -  Home page - - -  -  - - -->
-			<div class="row hide component" id="main_section_home">
-				<header class="col-md-12">
-					Hello! :)
-					<hr align="left" width="3%" />
-				</header>
-				<br /><br />
+        <div class="grid-item">
+          <div class="content">
+            <a href="https://github.com/songesu/attenDONE" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/attenDONE.png">
+              <div class="content-details fadeIn-top">
+                <h3>attenDONE</h3>
+                <p>Take attendance by the usage of the NFC chip inside student ID cards. Students can just tap in for attendance!</p>
+                <div class="note android-note">Android Application</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-				<div class="col-md-12" id="about_me">
-					<p>My name is <b>Esther Song</b> and I am an aspiring software engineer based
-        		in New York, NY.
-						I have experience in Full Stack Development and Android Application Development.
-						I hope to continue my passion in developing technologies that can help others and I am always curious and willing to learn more.!
-					<br /><br />
-					When I'm not coding I like to draw and learn about new technologies.
-					</p>
-				</div>
-			</div>
+        <div class="grid-item">
+          <div class="content">
+            <a href="https://github.com/songesu/Safe_For_Dogs" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/safe-for-dogs.png">
+              <div class="content-details fadeIn-top">
+                <h3>Safe for Dogs</h3>
+                <p>Help dog owners figure out whether or not a food product is safe for dog to consume or not, through a simple scanning of the product's barcode!</p>
+                <div class="note android-note">Android Application</div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-			<!--- - - - -  -  Portfolio page - - -  -  - - -->
-			<div class="hide component" id="main_section_portfolio">
-				<div class="row">
-					<header class="col-md-12">
-						Portfolio
-						<hr align="left" width="3%" />
-					</header>
-				</div>
+      </div>
 
-				<div class="row text-right portfolio_header">
-					<div class="col-md-12">
-						<h2>Applications</h2>
-						<hr width="60%" align="right"/>
-					</div>
-				</div>
+      <div class="body-title-wrapper">
+        <div class="body-bg-lg"></div>
+        <div class="body-bg-sm"></div>
+        <span class="baskerville-font body-title-txt">Resume</span>
+      </div>
 
-				<div class="row text-center applications">
-					<div class="col-md-4">
-						<a href="https://github.com/songesu/FeeLessReact" target="_blank" class="project_link">
-							<img src="./assets/feeless-port.png" width=100% />
-						</a>
-						<br /><br />
-						<h5>FeeLess</h5>
-						<p>A web platform that takes on a new way of transferring money without the fee by matching people up based on the country they want to send the money to.</p>
-					</div>
-					<div class="col-md-4">
-						<a href="https://github.com/MansurTsutiev/PeerTutor" target="_blank" class="project_link">
-							<img src="./assets/peer-tutor-port.jpg" width=100%/>
-						</a>
-						<br /><br />
-						<h5>PeerTutor</h5>
-						<p>A web platform that seeks to help college students find tutors specifically for their class. How is this done? Students who have taken the class previously can sign up to be tutors! </p>
-						<a href="./assets/peer-tutor-flowchart.png" class="demo_link" target="_blank">Flowchart</a>
-						 |
-						<a href="http://54.147.235.220:3000/" class="demo_link" target="_blank">Demo</a>
-					</div>
-					<div class="col-md-4">
-						<a href="https://github.com/heidiwu/organic-or-not" target="_blank" class="project_link">
-							<img src="./assets/if-organic-port.jpg" width=100%/>
-						</a>
-						<br /><br />
-						<h5>if(ORGANIC){Compost}</h5>
-						<p>An application that helps user figure out if an item is organic or not (for recycling) by having the user take a picture of the item and sending it over SMS. The application also help you find the nearest recycling site. Everything is done through text messaging! (so convienent!)</p>
-						<a href="http://stormy-dusk-16586.herokuapp.com/" class="demo_link" target="_blank">Demo</a>
-					</div>
-				</div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+      //init masonry grid
+      var elem = document.querySelector('.grid');
+      var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+      });
 
-				<br /><br />
-
-				<div class="row text-center applications">
-					<div class="col-md-4">
-						<a href="https://github.com/songesu/attenDONE" target="_blank" class="project_link">
-							<img src="./assets/attendone-port.jpg" width=100% />
-						</a>
-						<br /><br />
-						<h5>AttenDONE</h5>
-						<p>An android application that takes the attendance of students by the usage of the NFC chip inside student ID cards. Students can just tap in for attendance!</p>
-					</div>
-					<div class="col-md-4">
-						<a href="https://github.com/songesu/Safe_For_Dogs" target="_blank" class="project_link">
-							<img src="./assets/safe-for-dogs-port.jpg" width=100%/>
-						</a>
-						<br /><br />
-						<h5>Safe for Dogs?</h5>
-						<p>An android application that helps dog owner figure out if a food product is safe for dog to consume or not, through a simple scanning of the product's barcode!</p>
-					</div>
-					<div class="col-md-4">
-						<a href="https://github.com/songesu/KiddyKode" target="_blank" class="project_link">
-							<img src="./assets/kiddykode-port.jpg" width=100%/>
-						</a>
-						<br /><br />
-						<h5>KiddyKode</h5>
-						<p>(First hackathon project) A website that's build with kids in mind, helping kids learn about Computer Science through games and providing resources such as links to mutiple learning sites.</p>
-						<a href="https://agile-reef-60707.herokuapp.com/" class="demo_link" target="_blank">Demo</a>
-					</div>
-				</div>
-
-				<br /><br />
-				<div class="row text-right portfolio_header">
-					<div class="col-md-12">
-						<h2>Other works</h2>
-						<hr width="60%" align="right"/>
-					</div>
-				</div>
-
-			</div>
-
-			<!--- - - - -  -  Resume page - - -  -  - - -->
-			<div class="row hide component" id="main_section_resume">
-				<header class="col-md-12">
-					Resume
-					<hr align="left" width="3%" />
-				</header>
-				<br /><br />
-				<div class="col-md-12 text-center">
-					<embed src="./files/Esther_Song_Resume.pdf" id="resume"/>
-					<br /> <br />
-					<a href="./files/Esther_Song_Resume.pdf" download="Esther_Song_Resume.pdf" id="download_link">
-						<div class="circle_link">
-							<img src="./assets/download.jpg" />
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<!--- - - - -  -  Contact page - - -  -  - - -->
-			<div class="row hide component" id="main_section_contact">
-				<header class="col-md-12">
-					Contact
-					<hr align="left" width="3%" />
-				</header>
-				<div class="card">
-					<div class="contact-info">
-						<div class="backdrop"></div>
-						<br />
-						<div class="center-align">
-							<p class="name-card">Esther Song | Software Developer</p>
-							<p> <span class="contact-style">Email ⇨ </span> <a href="mailto:song.esther01@gmail.com" class="remove-txt-deco" target="_top"><span class="contact-style">song.esther01@gmail.com</span></a> </p>
-						</div>
-						<br />
-						<div class="backdrop"></div>
-					</div>
-				</div>
-			</div>
-
-			<!--====================================
-						FOOTER SECTION
-			========================================-->
-			<footer class="container">
-				<hr width= 80% />
-				<div class="row">
-					<div class="text-center">
-						<a href="https://github.com/songesu" target="_blank">
-							<img src="./assets/github-icon.png" alt="github icon" />
-						</a>
-						<a href="https://www.linkedin.com/in/songesther/" target="_blank">
-							<img src="./assets/linkedin-icon.png" alt="linkedin icon"/>
-						</a>
-					</div>
-				</div>
-			</footer>
-		</div>
-	</body>
+      // element argument can be a selector string
+      //   for an individual element
+      var msnry = new Masonry( '.grid', {
+        // options
+      });
+    </script>
+  </body>
 </html>
