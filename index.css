@@ -206,10 +206,10 @@ html { overflow-y: scroll; }
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: -webkit-transform translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: -webkit-transition all 0.3s ease-in-out 0s;
+  -webkit-transition: -webkit-transform  all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
