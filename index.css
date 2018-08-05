@@ -237,13 +237,14 @@ html { overflow-y: scroll; }
 
 #spin {
   font-size: 5rem;
-  color:#fff;
+  color: #38629e;
+  text-shadow: 0px 0px 1px #5C7392;
 }
 #spin:before {
   content:"I'm Esther Song,";
-  -webkit-animation: webkit-spin 5s linear infinite;
-  -moz-animation: moz-spin 5s linear infinite;
-  animation: spin 5s linear infinite;
+  -webkit-animation: webkit-spin 3s linear infinite;
+  -moz-animation: moz-spin 3s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 @keyframes spin {
@@ -270,7 +271,6 @@ html { overflow-y: scroll; }
   }
   #spin {
     font-size: 3rem;
-    color:#fff;
   }
   .grid-sizer,
   .grid-item {
@@ -281,8 +281,6 @@ html { overflow-y: scroll; }
 @media only screen and (min-width: 600px) and (max-width: 750px) {
   #spin {
     font-size: 2.7rem;
-    color: #fff;
-    margin: 0 auto;
   }
   .grid-sizer,
   .grid-item {
@@ -292,8 +290,6 @@ html { overflow-y: scroll; }
 @media only screen and (min-width: 750px) and (max-width: 1200px) {
   #spin {
     font-size: 3.5rem;
-    color: #fff;
-    margin: 0 auto;
   }
   .grid-sizer,
   .grid-item {
