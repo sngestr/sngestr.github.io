@@ -1,185 +1,129 @@
-*, *:before, *:after {
-  margin: 0;
+* {
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:border-box;
+  margin: 0;
   box-sizing: border-box;
 }
- a {
-   z-index: 100;
- }
-/* force scrollbar */
-html { overflow-y: scroll; }
+
+body {
+  background-color: #FAF7F7;
+}
+.me {
+  margin: 30px;
+}
+
+.me img {
+  float: right;
+  width: 60%;
+}
+
+.center {
+  text-align: center;
+}
+
+.center a {
+  color: #605F5F;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+#icon {
+  width: 30px;
+  height: auto;
+  object-fit: contain;
+}
+
+.icon_links {
+  width: 25px;
+  margin: 0 3px;
+}
+
+.about_me {
+  font-family: 'Krub', sans-serif;
+  float: left;
+  font-weight: 200;
+  font-size: 4rem;
+  width: 35%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#heart_one {
+  width: 15px;
+  margin: 0 5px;
+}
+
+#heart_two {
+  float: right;
+  width: 40px;
+}
+
+.info_side_bar {
+  margin: 20px;
+  float: left;
+}
 
 #links {
+  padding: 20px;
+  float: right;
+}
+
+.post_header {
   display: flex;
-  flex-direction: row;
-}
-  #links a {
-    margin: 5px;
-  }
-  #links a img {
-    background-blend-mode: screen multiply;
-  }
-  .top-animated-words {
-    z-index: 200;
-  }
-.top-outline {
-  position: absolute;
-  border: 1px dotted #000;
-  height: 70vh;
-  width: 100%;
-}
-
-.baskerville-font {
-  font-family: 'Baskerville', sans-serif;
-}
-
-.raleway-font {
-  font-family: 'Raleway', sans-serif;
+  align-items: center;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-.note {
-  width: 30%;
-  margin: 0 auto;
-  color: #ffffff;
-  font-size: .7rem;
-  padding: 5px;
-  text-transform: uppercase;
-  border-radius: 10px;
-}
-.android-note {
-  margin-top: 5px;
-  background-color: #83ac3f;
-}
-
-.web-note {
-  margin-top: 5px;
-  background-color: #ee8e8b;
-}
-
-.icon-size {
-  width: 30px;
-}
-
-#top {
-  position: relative;
-  width: auto;
-  height: 70vh;
-  margin: 20px;
-  /* background-color: #FCF9F3; */
-  background: linear-gradient(#E1ECF3, #E5E2F7, #F8E3EE);
+.projects_wrapper {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 300;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  flex-wrap: wrap;
 }
-  #top-outline-one {
-    top: 20px;
-    right: 10px;
-  }
-  #top-work {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: #5C7392;
-    font-size: 1.7rem;
-    font-style: italic;
-  }
-  #top-titles {
-    font-size: 1.2rem;
-    color: #5C7392;
-  }
 
-#body {
-  margin-top: 50px;
+.title {
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.more_on_git {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.footer {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.5rem;
   text-align: center;
-}
-  .body-title-wrapper {
-    margin: 0 auto;
-    width: 30%;
-    position: relative;
-  }
-    .body-bg-lg {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 10px;
-      right: 50%;
-      z-index: -1;
-      border-radius: 100%;
-      background: linear-gradient(#E5E2F7, #E1ECF3);
-    }
-    .body-bg-sm {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background: linear-gradient(#F8E3EE, #E5E2F7);
-      top: 0px;
-      right: 35%;
-      z-index: -1;
-      border-radius: 100%;
-    }
-    .body-title-txt {
-      font-size: 2.3rem;
-      font-style: italic;
-      color: #5C7392;
-    }
-    #body-about {
-      width: 50%;
-      padding: 30px;
-      margin: 0 auto;
-    }
-    .body-works {
-      margin-top: 50px;
-    }
-
-/* ---- grid ---- */
-
-.grid {
-  background: transparent;
+  font-weight: 300;
+  padding: 40px 0;
 }
 
-  /* clear fix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  /* ---- .grid-item ---- */
-
-  .grid-sizer,
-  .grid-item {
-    width: 33%;
-  }
-
-  .grid-item {
-    float: left;
-  }
-
-  .grid-item img {
-    display: block;
-    max-width: 100%;
-  }
 
 .content {
   position: relative;
-  width: 100%;
-  margin: auto;
+  margin: 0 5px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .content .content-overlay {
   display: block;
   background: rgba(0,0,0,0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -202,8 +146,6 @@ html { overflow-y: scroll; }
 .content-details {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -224,75 +166,94 @@ html { overflow-y: scroll; }
 
 .content-details h3{
   color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 300;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
 .content-details p{
   color: #fff;
-  font-size: 0.8em;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1em;
 }
 
-#spin {
-  font-size: 5rem;
-  color: #fff;
-  text-shadow: 0px 0px 10px #5C7392;
+.note {
+  width: 50%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: .7rem;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
-#spin:before {
-  content:"I'm Esther Song,";
-  -webkit-animation: webkit-spin 3s linear infinite;
-  -moz-animation: moz-spin 3s linear infinite;
-  animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-  0%, 10%, 20%, 30% { content:"I'm Esther Song,"; }
-  40%, 50%, 60% { content:"art enthusiast,"; }
-  70%, 80%, 90%, 100% { content:"Software Developer,"; }
+.android-note {
+  margin-top: 5px;
+  background-color: #83ac3f;
 }
 
-@-moz-keyframes moz-spin{
-  0%, 10%, 20%, 30% { -moz-content:"I'm Esther Song,"; }
-  40%, 50%, 60% { -moz-content:"art enthusiast,"; }
-  70%, 80%, 90%, 100% { -moz-content:"Software Developer,"; }
+.web-note {
+  margin-top: 5px;
+  background-color: #ee8e8b;
 }
 
-@-webkit-keyframes webkit-spin{
-  0%, 10%, 20%, 30% { -webkit-content:"I'm Esther Song,"; }
-  40%, 50%, 60% { -webkit-content:"art enthusiast,"; }
-  70%, 80%, 90%, 100% { -webkit-content:"Software Developer,"; }
-}
 
 @media only screen and (max-width: 600px) {
-  #top {
-    align-items: flex-start;
-  }
-  #spin {
-    font-size: 3rem;
-  }
-  .grid-sizer,
-  .grid-item {
+  .about_me {
+    padding: 0;
+    margin: 0;
     width: 100%;
+    font-size: 2rem;
+  }
+  .me img {
+    width: 100%;
+  }
+  .content {
+    width: 90%;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 750px) {
-  #spin {
-    font-size: 2.7rem;
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .about_me {
+    width: 80%;
+    font-size: 3rem;
   }
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
+  .me img {
+    width: 95%;
+  }
+  .content {
+    width: 40%;
   }
 }
-@media only screen and (min-width: 750px) and (max-width: 1200px) {
-  #spin {
-    font-size: 3.5rem;
+
+@media only screen and (min-width: 900px) and (max-width: 1150px) {
+  .about_me {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    font-size: 3rem;
   }
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
+  .me img {
+    width: 60%;
+  }
+  .content {
+    width: 19%;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1900px)  {
+  .about_me {
+    padding: 0;
+    margin: 10px;
+    width: 35%;
+    font-size: 4rem;
+  }
+  .me img {
+    width: 55%;
+  }
+  .content {
+    width: 19%;
   }
 }
