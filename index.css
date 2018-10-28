@@ -9,7 +9,10 @@ body {
   background-color: #FAF7F7;
 }
 .me {
-  margin: 30px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: pink;
+  /* margin: 30px; */
 }
 
 .me img {
@@ -46,9 +49,12 @@ body {
   float: left;
   font-weight: 200;
   font-size: 4rem;
-  width: 35%;
-  margin: 20px;
+  /* width: 35%; */
+  width: 80%;
+  /* margin: 20px; */
+  margin: 0 auto;
   display: flex;
+  text-align: center;
   align-items: center;
   color: black;
 }
@@ -231,8 +237,8 @@ body {
 @media only screen and (min-width: 900px) and (max-width: 1150px) {
   .about_me {
     padding: 0;
-    margin: 0;
-    width: 40%;
+    /* margin: 0;
+    width: 40%; */
     font-size: 3rem;
   }
   .me img {
@@ -246,8 +252,8 @@ body {
 @media only screen and (min-width: 1150px) and (max-width: 1900px)  {
   .about_me {
     padding: 0;
-    margin: 10px;
-    width: 35%;
+    /* margin: 10px;
+    width: 35%; */
     font-size: 4rem;
   }
   .me img {
