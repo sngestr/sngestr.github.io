@@ -8,13 +8,15 @@
 
 html, body {
     height: auto;
-    /* To match the height of the page */
     scroll-behavior: smooth;
-    overflow-x: hidden;
+}
+
+#body_wrapper {
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
-  /*background: #111111;*/
   background-image: url("assets/plaid.png");
   background-repeat: repeat;
   margin: 0;
@@ -120,15 +122,15 @@ div.nav_wrapper {
 }
 
 .info_side_bar .nav_one a:hover {
-  border-bottom: 10px solid #E0F9B5; /* or whatever colour you'd prefer */
+  border-bottom: 10px solid #E0F9B5; 
 }
 
 .info_side_bar .nav_two a:hover {
-  border-bottom: 10px solid #A5DEE5; /* or whatever colour you'd prefer */
+  border-bottom: 10px solid #A5DEE5;
 }
 
 .info_side_bar .nav_three a:hover {
-  border-bottom: 10px solid #FEFDCA; /* or whatever colour you'd prefer */
+  border-bottom: 10px solid #FEFDCA;
 }
 
 #links {
@@ -490,11 +492,11 @@ span.exp_job_title {
 /* Typewriter Effect */
 
 .typewriter span {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
+  overflow: hidden; 
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em; 
   text-align: center;
   animation: 
     typing 1.5s steps(11, end),
@@ -502,11 +504,11 @@ span.exp_job_title {
 }
 
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em; 
   text-align: center;
   animation: 
     typing 1.5s steps(11, end),
