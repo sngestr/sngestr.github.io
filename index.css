@@ -714,6 +714,10 @@ span.exp_job_title {
 /* Small Screens */
 
 @media only screen and (max-width: 600px) {
+  #links {
+    padding: 10px 5px;
+    border-bottom-left-radius: 20px;
+  }
   .about_me {
     padding: 0;
     margin: 0;
