@@ -1,132 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Esther Song</title>
+    <title>esther song | developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="index.css" type="text/css"/>
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Krub:200,400" rel="stylesheet">
-
-    <script>
-      function changeHeart() {
-        var heart = document.getElementById("heart_one").src;
-        if (heart.indexOf('heart.png') != -1) {
-            document.getElementById('heart_one').src  = 'assets/unlike.png';
-        } else {
-           document.getElementById('heart_one').src = 'assets/heart.png';
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="blob.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
 
   </head>
 
   <body>
-    <div class="info_side_bar">
-      <div class="post_header">
-        <span> esther song </span>
-        <img onclick="changeHeart()" src="assets/heart.png" onmouseover="this.style.cursor='pointer'" alt="like" id="heart_one" />
-      </div>
-    </div>
+    <div id="home"></div>
+    <div id="nav_wrapper" class="sticky nav_wrapper">
+        <!-- ==============
+              Page Links
+           ============== -->
+      <div class="info_side_bar">
 
-    <div id="links">
-      <a href="https://github.com/songesu" target="_blank"><img src="assets/github-icon.png" class="icon_links" alt="github" /></a>
-      <a href="https://www.linkedin.com/in/songesther/" target="_blank"><img src="assets/linkedin.png" class="icon_links" alt="linkedin" /></a>
-      <a href="mailto:song.esther01@gmail.com"><img src="assets/mail.png" class="icon_links" alt="mail" /></a>
+        <span class="nav_one">
+          <a href="#first_section">PROJECTS</a>
+        </span>
+
+        <span class="nav_two">
+          <a href="#second_section">EXPERIENCE</a>
+        </span>
+
+        <span class="nav_three">
+          <a href="#third_section">CONTACT</a>
+        </span>
+        
+      </div>
+
+      <!-- <img onclick="changeHeart()" src="assets/heart.png" onmouseover="this.style.cursor='pointer'" alt="like" id="heart_one" /> -->
+
+
+      <!-- ==============
+            External Links
+           ============== -->
+      <div id="links">
+
+        <div class="tooltip">
+          <a href="https://github.com/uwuster" target="_blank"><img src="assets/github-icon.png" class="icon_links" alt="github" /></a>
+          <span class="tooltiptext github">Github</span>
+        </div>
+
+        <div class="tooltip">
+          <a href="https://www.linkedin.com/in/songesther/" target="_blank"><img src="assets/linkedin.png" class="icon_links" alt="linkedin" /></a>
+          <span class="tooltiptext linkedin">LinkedIn</span>
+        </div>
+
+        <div class="tooltip">
+          <a href="mailto:song.esther01@gmail.com"><img src="assets/mail.png" class="icon_links" alt="mail" /></a>
+          <span class="tooltiptext mail">Email</span>
+        </div>
+
+      </div>
+
     </div>
 
     <div class="clear"></div>
 
-    <!-- <div class="me">
-      <div class="about_me">
-        Hi, my name is Esther and I am a software developer who likes to create.
+    <br />
+
+    <div class="about_section">
+      <div class="container">
+        <h1>Hi. I'm Esther, </h1>
+        <h2 class="wrap typewrite" data-period="500" data-type='[ "an android engineer.", "an art kid.", "a boba addict." ]'></h2>
+        <p>I'm a software engineer based in NYC, that specializes in development for the Android platform. Developing beautiful and engaging app experiences intrigues me and I love bringing them to life. </p>
       </div>
-      <img src="assets/me_port_cut.png" alt="me" />
-    </div> -->
+      <div class="about_image hovering">
+        <img class="content-image" src="assets/portart.png">
+      </div>
+    </div>
 
     <div class="clear"></div>
     <br />
-    <div class="projects_wrapper">
-      <!-- ======================================================================= -->
-      <div class="content">
-        <a href="https://github.com/songesu/SimpleCalendar" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="assets/simple_calendar.png">
-          <div class="content-details fadeIn-top">
-            <h3>Simple  Calendar</h3>
-            <p>Create events on a calendar with the ability to update and delete the event.</p>
-            <div class="note android-note">Android Application</div>
-          </div>
-        </a>
-      </div>
-      <!-- ======================================================================= -->
-
-      <!-- ======================================================================= -->
-      <div class="content">
-        <a href="https://play.google.com/store/apps/details?id=com.cloudient.simpletipcalculator" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="assets/tip_calculator.png">
-          <div class="content-details fadeIn-top">
-            <h3>Tip Calculator</h3>
-            <p>Calculator that caluclates to the total tip of a bill. Get it on google play.</p>
-            <div class="note android-note">Android Application</div>
-          </div>
-        </a>
-      </div>
-      <!-- ======================================================================= -->
-
-      <!-- ======================================================================= -->
-      <div class="content">
-        <a href="https://github.com/songesu/Safe_For_Dogs" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="assets/safe_for_dogs.png">
-          <div class="content-details fadeIn-top">
-            <h3>Safe for Dogs</h3>
-            <p>Help dog owners figure out whether or not a food product is safe for dog to consume or not, through a simple scanning of the product's barcode!</p>
-            <div class="note android-note">Android Application</div>
-          </div>
-        </a>
-      </div>
-      <!-- ======================================================================= -->
+    <br />
 
 
-      <!-- ======================================================================= -->
-      <div class="content">
-        <a href="https://github.com/songesu/attenDONE" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="assets/attenDONE.png">
-          <div class="content-details fadeIn-top">
-            <h3>attenDONE</h3>
-            <p>Take attendance by the usage of the NFC chip inside student ID cards. Students can just tap in for attendance!</p>
-            <div class="note android-note">Android Application</div>
-          </div>
-        </a>
-      </div>
-      <!-- ======================================================================= -->
+    <div class="section_body">
 
-      <!-- ======================================================================= -->
-      <div class="content">
-        <a href="http://54.147.235.220:3000/" target="_blank">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="assets/peer_tutor.png">
-          <div class="content-details fadeIn-top">
-            <h3>Peer Tutor</h3>
-            <p>Platform that seeks to help college students find tutors specifically for their class.</p>
-            <div class="note web-note">Web Application</div>
-          </div>
-        </a>
-      </div>
-      <!-- ======================================================================= -->
-    </div>
-
-    <!-- <div class="center">
-      <a href="https://github.com/songesu" target="_blank"><span class="more_on_git" onmouseover="this.style.cursor='pointer'">more on Github...</span></a>
-    </div> -->
-
-    <div class="footer">
-      <img src="assets/icon.png" alt="icon" id="icon"/>
       <br />
-      <span>2018</span>
+      <br />
+
+      <div id="first_section" class="section_wrapper first_section">
+        <span>Projects</span>
+        <div class="box">&nbsp;</div>
+      </div>
+
+      <br />
+      <br />
+
+      <div id="project_section_wrapper" class="section_content_wrapper">
+        <!-- ======================================================================= -->
+        <div class="content">
+          <a href="https://github.com/uwuster/Floatie" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/floatie.png">
+            <div class="content-details fadeIn-top">
+              <h3>Floatie</h3>
+              <p>To help create a floating view in your android application.</p>
+              <div class="note android-lib-note">Android Library</div>
+            </div>
+          </a>
+        </div>
+        <!-- ======================================================================= -->
+
+        <!-- ======================================================================= -->
+        <div class="content">
+          <a href="https://github.com/uwuster/SimpleCalendar" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/simple_calendar.png">
+            <div class="content-details fadeIn-top">
+              <h3>Simple  Calendar</h3>
+              <p>Create events on a calendar with the ability to update and delete the event.</p>
+              <div class="note android-note">Android Application</div>
+            </div>
+          </a>
+        </div>
+        <!-- ======================================================================= -->
+
+        <!-- ======================================================================= -->
+        <div class="content">
+          <a href="https://github.com/uwuster/SimpleTipCalculator" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/tip_calculator.png">
+            <div class="content-details fadeIn-top">
+              <h3>Tip Calculator</h3>
+              <p>Calculator that calculates to the total tip of a bill.</p>
+              <div class="note android-note">Android Application</div>
+            </div>
+          </a>
+        </div>
+        <!-- ======================================================================= -->
+
+        <!-- ======================================================================= -->
+        <div class="content">
+          <a href="https://github.com/uwuster/Safe_For_Dogs" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/safe_for_dogs.png">
+            <div class="content-details fadeIn-top">
+              <h3>Safe for Dogs</h3>
+              <p>Help dog owners figure out whether or not a food product is safe for dog to consume or not, through a simple scanning of the product's barcode!</p>
+              <div class="note android-note">Android Application</div>
+            </div>
+          </a>
+        </div>
+        <!-- ======================================================================= -->
+
+
+        <!-- ======================================================================= -->
+        <div class="content">
+          <a href="https://github.com/uwuster/attenDONE" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/attenDONE.png">
+            <div class="content-details fadeIn-top">
+              <h3>attenDONE</h3>
+              <p>Take attendance by the usage of the NFC chip inside student ID cards. Students can just tap in for attendance!</p>
+              <div class="note android-note">Android Application</div> <div class="note collab-note">Collaboration Project</div>
+            </div>
+          </a>
+        </div>
+        <!-- ======================================================================= -->
+
+        <!-- ======================================================================= -->
+        <div class="content">
+          <a href="https://github.com/MansurTsutiev/PeerTutor" target="_blank">
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/peer_tutor.png">
+            <div class="content-details fadeIn-top">
+              <h3>Peer Tutor</h3>
+              <p>Platform that seeks to help college students find tutors specifically for their class.</p>
+              <div class="note web-note">Web Application</div> <div class="note collab-note">Collaboration Project</div>
+            </div>
+          </a>
+        </div>
+        <!-- ======================================================================= -->
+      </div>
+
+      <br />
+      <br />
+
+
+      <div id="second_section" class="section_wrapper second_section">
+        <div class="box">&nbsp;</div>
+        <span>Experience</span>
+      </div>
+
+      <div id="experience_section_wrapper" class="section_content_wrapper">
+        <div class="inner_content_wrapper">
+          <div class="exp_title">
+            <span class="exp_year">FEB 2019 – Present</span><br />
+            <span class="exp_job_title">Software Engineer - Android</span>
+            <p>The Walt Disney Company - DMED <br> New York, NY</p>
+          </div>
+          <div class="exp_desc">
+              • Develop new features to continuously improve user engagement and overall user experience for the ESPN app <br><br>
+              • Resolve issues and bugs in the ESPN app <br><br>
+              • Utilized clean Android architecture design (MVVM and MVI) in the development of new features to modernize and improve scalability of the app <br><br>
+              • Maintained multiple analytics SDKs (New Relic, Floodlight, Kochava, Vision) to assure the quality of the data collected <br><br>
+              • Modularized feature components to improve maintainability and optimization of the feature
+          </div>
+        </div>
+
+        <div class="inner_content_wrapper">
+          <div class="exp_title">
+            <span class="exp_year">Fall 2018</span><br />
+            <span class="exp_job_title">Software Engineer Internship - Android</span>
+            <p><a href="https://play.google.com/store/apps/details?id=com.espn.score_center&hl=en&gl=US" target="_blank">ESPN</a><br> Bristol, CT</p>
+          </div>
+          <div class="exp_desc">
+              • Developed the “Score Bubble” feature on the ESPN app, allowing users to pin games to their screen and access real-time updates and game stats <br><br>
+              • Collaborated with product managers and designers to ensure product specifications and contributed ideas to the wireframe and mockup design <br><br>
+          </div>
+        </div>
+
+
+        <div class="inner_content_wrapper">
+          <div class="exp_title">
+            <span class="exp_year">SPRING/SUMMER 2018</span><br />
+            <span class="exp_job_title">Software Engineer Internship - Full Stack</span>
+            <p><a href="https://quadrant2.us/" target="_blank">Quadrant 2</a> <br> New York, NY</p>
+          </div>
+          <div class="exp_desc">
+              • Worked directly with clients on a variety of projects and helped identify the scope of each <br><br>
+              • Utilized JavaScript, React.js, and Express.js to develop web apps for both end-users and administrator uses <br><br>
+              • Designed web app prototypes to showcase to clients using Lottie for animation assets and InVision for interactive mockups
+          </div>
+        </div>
+
+        <div class="inner_content_wrapper">
+          <div class="exp_title">
+            <span class="exp_year">SPRING 2017 – 2018</span><br />
+            <span class="exp_job_title">CUNY Tech Prep Fellow</span>
+            <p><a href="https://www.techtalentpipeline.nyc/" target="_blank">NYC Tech Talent Pipeline</a> <br> New York, NY</p>
+          </div>
+          <div class="exp_desc">
+              • Designed and implemented web applications by utilizing Express.js, Passport.js, Sequelize, PostgreSQL for the back-end, alongside React.js and Bootstrap 4 on the front-end, to create responsive MVC patterned web applications<br><br>
+              • Collaborated with a team of four to build a fully functional web application by applying our knowledge of both front-end and back-end technologies <br><br>
+              • Learned technologies such as React and Node + Express as well as tools and processes for design, implementation, testing, and deployment
+          </div>
+        </div>
+
+      </div>
+
+      <br />
+      <br />
+
+
+      <div id="third_section" class="section_wrapper third_section">
+        <span>Contact</span>
+        <div class="box">&nbsp;</div>
+      </div>
+
+      <br />
+      <br />
+
+      <div id="contact_section_wrapper" class="section_content_wrapper">
+        <div id="contact_section" class="inner_content_wrapper">
+
+          <div class="contact_section_title">✨ 🌼 Please feel free to contact me! 🌼 ✨</div>
+          <br />
+
+           <div class="tooltip contact_icon">
+            <a href="https://github.com/uwuster" target="_blank"><img src="assets/github-icon.png" class="icon_links" alt="github" /></a>
+            <span class="tooltiptext github">Github</span>
+          </div>
+
+          <div class="tooltip contact_icon">
+            <a href="https://www.linkedin.com/in/songesther/" target="_blank"><img src="assets/linkedin.png" class="icon_links" alt="linkedin" /></a>
+            <span class="tooltiptext linkedin">LinkedIn</span>
+          </div>
+
+          <div class="tooltip contact_icon">
+            <a href="mailto:song.esther01@gmail.com"><img src="assets/mail.png" class="icon_links" alt="mail" /></a>
+            <span class="tooltiptext mail">Email</span>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="#home">
+        <img src="assets/arrow_up.png" alt="arrow-up" class="top_image" id="arrow-up"/>
+      </a>
+
+      <!-- ===============
+              Footer
+           =============== -->
+      <div class="footer">
+        <img src="assets/icon.png" alt="icon" id="icon"/>
+        <br />
+        <span>Updated April 2022</span>
+      </div>
+        
     </div>
+
+
+    <div class="shape-blob"></div>
+    <div class="shape-blob one"></div>
+    <div class="shape-blob two"></div>
+    <div class="shape-blob three"></div>
   </body>
 </html>
